@@ -18,8 +18,7 @@ npm run dev
 
 Sure, here's how you can update your README.md file to reflect the instructions for running your project and accessing the API endpoints:
 
-markdown
-Copy code
+
 # Backend Marketing API
 
 Welcome to the Backend Marketing API! This API provides endpoints to retrieve data related to marketing, commissions, and sales.
@@ -43,9 +42,10 @@ npm install
 Running the Program
 To run the program, you can use the following command:
 
-bash
+```bash
 Copy code
 npm run dev
+
 This command will start the server and allow you to access the API endpoints.
 
 Accessing API Endpoints
