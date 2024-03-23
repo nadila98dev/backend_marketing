@@ -13,12 +13,14 @@ git clone https://github.com/yourusername/backend_marketing.git
 
 ```
 
-Running the Program
+## Running the Program
 To run the program, you can use the following command:
 
-bash
-Copy code
+```bash
+
 npm run dev
+```
+
 This command will start the server and allow you to access the API endpoints.
 
 Accessing API Endpoints
