@@ -42,3 +42,17 @@ Endpoint: GET /all-sell
 This endpoint retrieves all sales data.
 
 Feel free to explore these endpoints and retrieve the data you need.
+
+Here is the result of API Testing using Postman 
+
+1. Get all data from Table Marketing
+![image](https://github.com/nadila98dev/backend_marketing/assets/72237943/9cfabd8e-06a8-4fc4-9240-1bd9421e7b5e)
+
+2. Get all data from Table Commission
+![image](https://github.com/nadila98dev/backend_marketing/assets/72237943/6e7c57e5-e4d3-41e4-9d86-741864a4256a)
+
+3.Get all data from Table Penjualan
+![image](https://github.com/nadila98dev/backend_marketing/assets/72237943/69eb419d-b858-405a-b24a-566addfafe3d)
+
+
+
