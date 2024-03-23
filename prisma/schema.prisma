@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Marketing {
+  id           Int @id @default(autoincrement())
+  name        String
+}
+
+model Penjualan {
+  id                  Int @id @default(autoincrement())
+  transaaction_number String
+  marketing_id        Int
+  date                DateTime
+  cargo_fee           Int
+  total_balance       Int
+  grand_total         Int
+}
+
+model Pembayaran {
+  id                  Int @id @default(autoincrement())
+  payment_date        DateTime @default(now())
+  amount_paid         Int
+  remaining_balance   Int
+}
+
+model Commission {
+  id          Int      @id @default(autoincrement())
+  name        String
+  month       String
+  sales       Decimal      @db.Decimal(20, 2)
+  commission_percentage Decimal     @db.Decimal(5, 2)
+  commission_nominal   Decimal
+}
